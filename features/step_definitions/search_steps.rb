@@ -9,3 +9,8 @@ end
 And(/^I get search result$/) do
   puts "I get my results"
 end
+
+Then(/^items should have discounts tags$/) do |table|
+  table = table.raw
+  puts table
+end

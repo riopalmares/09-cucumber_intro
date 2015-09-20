@@ -32,11 +32,10 @@ And(/^I send my password "([^"]*)"$/) do |password|
 end
 
 
-
-
-
-
-
-
-
-
+And(/^I should( not)? see error message$/) do |condition|
+  if condition == " not"
+    puts "Everything is OK!!!"
+  else
+    puts "Error!!!!!!"
+  end
+end
